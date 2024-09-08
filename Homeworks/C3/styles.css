@@ -1,6 +1,72 @@
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
     margin: 20px;
+    background-color: black;
   }
+
+  #brandTitle {
+    color: chartreuse;
+    font-size: 4em;
+    background-color: blueviolet;
+  }
+
+  #brandTitle:hover {
+    color: blueviolet;
+    background-color: chartreuse;
+    transition: 0.5s;
+  }
+
+  #topBanner {
+    width: fit-content;
+    margin: auto;
+  }
+
+  #image {
+    margin: auto;
+  }
+
+  #topElements {
+    margin: auto;
+  }
+
+  #topBanner1 {
+    color: chartreuse;
+    font-style: italic;
+    font-size: 1.5em;
+  }
+
+  .topBanner1Element:hover {
+    background-color: chartreuse;
+    color: black;
+    transition: 0.5s;
+  }
+
+  /*Titles*/
+
+  .subTitle {
+    color: blueviolet;
+    font-size: 3em;
+    margin: auto;
+  }
+
+  .sectionTitle {
+    color: chartreuse;
+    font-size: 2em;
+    margin: 0.2em;
+  }
+
+  .genericText {
+    background-color: blueviolet;
+    font-size: 2em;
+    margin: auto;
+  }
+
+  .sectionSubTitle {
+    color: chartreuse;
+    font-style: italic;
+    margin: 0.5em;
+  }
+
+
+
+

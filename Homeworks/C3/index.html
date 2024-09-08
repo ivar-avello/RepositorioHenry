@@ -3,20 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
     <title>My First WebSite</title>
 </head>
 <body>
     <header>
         <!--header is used for the title and top bar section-->
-        <h1>HotelNow!</h1>
-        <!--div is a multipurpose container that uses all the width of the screen-->
-        <div>
-            <!--span is for placing elements horizontally-->
-            <span>Home</span>
-            <span>Places</span>
-            <span>Reviews</span>
+        <div id="topBanner">
+            <h1 id="brandTitle">HotelNow!</h1>
         </div>
-        <!--hr is a line division-->
+        <div id="topElements">
+            <!--div is a multipurpose container that uses all the width of the screen-->
+            <div id="topBanner1">
+                <!--span is for placing elements horizontally-->
+                <span class="topBanner1Element">Home</span>
+                <span class="topBanner1Element">Places</span>
+                <span class="topBanner1Element">Reviews</span>
+            </div>
+            <!--hr is a line division-->
+        </div>
         <hr />
     </header>
 
@@ -24,8 +29,8 @@
         <!--Main is where the principal context of the website goes-->
 
         <div>
-            <img src="./hotel.jpg" content="width=device-width, initial-scale=1.0">
-            <h2>Need a nice & safe place to stay on a budget? We got you covered!</h2>
+            <img src="./hotel.jpg" content="width=device-width, initial-scale=1.0" id="image">
+            <h2 class="subTitle">Need a nice & safe place to stay on a budget? We got you covered!</h2>
             <hr />
         </div>
 
@@ -33,16 +38,14 @@
         <!--Section defines a section inside the main-->
             <article>
             <!--Article is a part inside section-->
-                <h3>Check out the new way of lodging</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident, temporibus molestias. 
-                    Maxime suscipit obcaecati rem ab reprehenderit et alias modi debitis cum nisi sequi praesentium
-                     sit impedit fugiat, porro sapiente.</p>
+                <h3 class="sectionTitle">Check out the new way of lodging</h3>
+                <p class="genericText">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident, temporibus molestias. Maxime suscipit obcaecati rem ab reprehenderit et alias modi debitis cum nisi sequi praesentium sit impedit fugiat, porro sapiente.</p>
                 <hr />
             </article>
             
             <article>
-                <h3>Since 2021</h3>
-                <ol>
+                <h3 class="sectionTitle">Since 2021</h3>
+                <ol class="genericText">
                     <li>Great hotels</li>
                     <li>Fast service</li>
                     <li>Pet friendly</li>
@@ -51,10 +54,10 @@
             </article>
             
             <article>
-                <h3>Work with us</h3>
+                <h3 class="sectionTitle">Work with us</h3>
                 <div>
-                    <p>We offer: </p>
-                    <ul>
+                    <p class="sectionSubTitle">We offer: </p>
+                    <ul class="genericText">
                         <li>Full time & Part time</li>
                         <li>Remote job modality</li>
                         <li>Benefits at the end of the year</li>
@@ -66,8 +69,8 @@
         </section>
         
         <div>
-            <h2>Book a meeting</h2>
-            <p>We will contact you soon!</p>
+            <h2 class="subTitle">Book a meeting</h2>
+            <p class="sectionSubTitle">We will contact you soon!</p>
             <input type="text" name="user_name" placeholder="Your Name">
             <input type="text" name="mail" placeholder="E-Mail">
             <button name="send">Send</button>
@@ -77,16 +80,18 @@
     </main>
 
     <footer>
-        <div>
-            <a href="">Contact</a>
-        </div>
-        <div>
-            <a href="">Terms and Conditions</a>
-        </div>
+        <div id="bottomSection">
+            <div>
+                <a href="">Contact</a>
+            </div>
+            <div>
+                <a href="">Terms and Conditions</a>
+            </div>
         </div>
         <div>
             <a href="">My Account</a>
         </div>
+    </div>
     </footer>
     
 </body>
